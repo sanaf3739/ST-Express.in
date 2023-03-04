@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+
+/* ----Topbar content start----*/
+
+.topbar-container {
+  display: flex;
+  background-color: black;
+}
+
+.trow {
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.trow1 {
+  text-align: left;
+}
+
+.trow2 {
+  text-align: right;
+  flex-shrink: 2;
+}
+
+.trow a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.trow a i {
+  padding: 0 0.5rem;
+}
+
+.devider {
+  color: #fff;
+  padding: 0 0.5rem;
+}
+
+#phone,
+#email {
+  color: #ffffff;
+}
+
+.devider {
+  color: #fff;
+  padding: 0 0.5rem;
+}
+
+@media only screen and (max-width: 613px) {
+  .topbar-container {
+    flex-wrap: wrap;
+  }
+
+  .trow {
+    text-align: center;
+  }
+
+  .trow1 {
+    padding-bottom: 4px;
+  }
+}
+
+/*----Topbar content end----*/
+
+/*----Navbar start*/
+.logo {
+  width: 15vw;
+}
+
+.navbar-nav {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.login {
+  background-color: #263c8a;
+}
+
+.signup {
+  background-color: #263c8a;
+}
+/*----Navbar end*/
+
+/*----background image----*/
+
+.bg-image {
+  background-image: url(./img/header1.png);
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  position: relative;
+}
+.bg-image h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 900;
+}
+.bg-image h1 i {
+  padding: 0 15px;
+}
+/*----main heading----*/
+.main-heading {
+  text-align: center;
+  color: dodgerblue;
+  font-weight: 900;
+  padding: 48px 15px 0;
+  margin-bottom: 1.5rem;
+}
+
+/*----about start----*/
+.fcontainer {
+  display: flex;
+  width: 75%;
+  margin: auto;
+  justify-content: center;
+  align-items: normal;
+  padding: 3rem 1rem;
+}
+
+.column {
+  position: relative;
+  padding: 0 15px;
+  width: 100%;
+}
+
+.column2 {
+  padding: 0 15px;
+  text-align: justify;
+}
+
+.frow1 img {
+  width: 100%;
+  height: 65vh;
+}
+
+.frow2 {
+  background-color: #263c8a;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+}
+.frow3 h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  margin-top: 16px;
+}
+.frow4 p {
+  line-height: 1.5rem;
+  text-transform: none;
+}
+
+@media screen and (max-width: 600px) {
+  .fcontainer {
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .frow1 img {
+    width: 100%;
+    height: auto;
+  }
+  .column{
+    min-width: 100%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .fcontainer{
+    flex-wrap: wrap;
+    width:100%;
+  }
+  .frow1 img {
+    width: 100%;
+    height: auto;
+  }
+  .column{
+    max-width: 75%;
+    padding: 24px 15px;
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+  .fcontainer{
+      flex-wrap: nowrap;
+      max-width: 90%;
+      margin: auto;
+  }
+
+  .frow1 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .column1{
+    max-width: 40%;
+  }
+  .column2{
+    max-width: 60%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .fcontainer{
+    flex-wrap: nowrap;
+    max-width: 80%;
+}
+
+.frow1 img {
+  width: 100%;
+  height: auto;
+}
+
+.column1{
+  max-width: 40%;
+}
+.column2{
+  max-width: 60%;
+}
+}
+
+
+/*----about end----*/
+
+/*----Footer start----*/
+.b-container {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: #ffffff;
+  padding: 2.5rem;
+}
+
+@media only screen and (max-width: 812px) {
+  .b-container {
+    display: block;
+    width: 100%;
+  }
+
+  /*.b-row{
+      width: 100%;
+    }*/
+}
+
+.b-row {
+  text-align: center;
+  width: 100%;
+  color: #ffffff;
+}
+
+.links {
+  color: #ffffff;
+}
+
+#website {
+  color: #ffffff;
+  text-transform: none;
+}
+
+.b-row h3 {
+  font-weight: 700;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: brown;
+  margin-bottom: 24px;
+}
+
+.b-row p {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  word-spacing: 4px;
+  letter-spacing: 0.5px;
+}
+
+#facebook,
+#twitter,
+#linkedin {
+  color: #ffffff;
+  font-size: 2rem;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.follow-us {
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+#phone,
+#email {
+  color: #ffffff;
+}
+
+/*----Footer end----*/

@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ST Express</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="topbar-container">
+      <div class="trow trow1">
+        <small
+          ><a href="tel: +91 77069 99469"
+            ><i class="fa fa-phone-alt mr-2" id="phone"></i> +91 77069 99469</a
+          ></small
+        >
+        <small class="devider">|</small>
+        <small
+          ><a href="mailto:sanaf6350@gmail.com"
+            ><i class="fa fa-envelope mr-2" id="email"></i>
+            sanaf6350@gmail.com</a
+          ></small
+        >
+      </div>
+      <div class="trow trow2">
+        <a class="facebook" href="https://www.facebook.com/sanaf.ali.75">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a class="twitter" href="https://twitter.com/home">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a
+          class="linkedin"
+          href="https://www.linkedin.com/in/sanaf-ali-336700218/"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+    <!-- Navbar content start-->
+
+    <nav class="navbar bg-light" data-bs-theme="light">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img class="logo" src="./img/st-logo.png" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="true"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a onclick="gotoHome()" class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a onclick="gotoService()" class="nav-link" href="services.html"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a onclick="gotoabout()" class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a onclick="gotocontact()"class="nav-link" href=" contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="mx-4">
+        <a href="login.html">
+          <button type="button" class="btn btn-primary login">Login</button></a
+        >
+        <a href="signup.html"
+          ><button type="button" class="btn btn-primary signup">
+            SignUp
+          </button></a
+        >
+      </div>
+    </nav>
+    <div class="bg-image">
+      <div class="container">
+        <h1>
+          reliable, faster & reasonable
+          <br />
+          cargo & carrier
+        </h1>
+        <a href="#" class="box">
+          <i class="fas fa-3x fa-parachute-box text-dark"></i>
+          <br />
+          <b>drop shipping</b>
+        </a>
+        <a href="#" class="box box2">
+          <i class="fas fa-3x fa-business-time text-dark"></i>
+          <br />
+          <b>pre order</b>
+        </a>
+        <a href="#" class="box">
+          <i class="fas fa-3x fa-people-carry text-dark"></i>
+          <br />
+          <b>pickup request</b>
+        </a>
+        <form action="">
+          <div class="track-container">
+            <input
+              class="input-text"
+              type="text"
+              name="track"
+              id="trace"
+              placeholder="tracking id"
+            />
+            <div>
+              <button class="track-btn" type="submit">Track & Trace</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="fcontainer">
+      <div class="column column1">
+        <div class="frow frow1">
+          <img src="./img/about-1.png" alt="about-image" />
+        </div>
+        <div class="frow frow2">
+          <h3>worldwide cargo services</h3> 
+        </div>
+      </div>
+      <div class="column column2">
+        <div class="frow3">
+          <h1 class="heading">reliable shipping</h1>
+        </div>
+        <div class="frow4">
+          <p>
+            ST Express air cargo sends thousands of parcels weekly all over the
+            world especially in India, Bangladesh, USA, Canada, UAE, and whole
+            Europe, so anyone can use its services for sending personal
+            belongings all over the world. We also act as commercial cargo
+            forwarder to move first moving consumer business goods one place to
+            another place and we also help to business customers to source best
+            product until reach out at customer doorstep. We care about
+            everything and promise to get your products swiftly and safely.
+            Place a booking request today to send and receive our service
+            globally from your destination, our highly efficient support team
+            always ready to help you.
+          </p>
+
+          <div class="d-flex align-items-center flex-wrap">
+            <div class="col-lg-6">
+              <ul class="list-inline">
+                <li>
+                  <h6>
+                    <i class="far fa-dot-circle text-primary mr-3"></i>Door to
+                    door delivery service
+                  </h6>
+                </li>
+                <li>
+                  <h6>
+                    <i class="far fa-dot-circle text-primary mr-3"></i>Cheapest
+                    rate you can find
+                  </h6>
+                </li>
+                <li>
+                  <h6>
+                    <i class="far fa-dot-circle text-primary mr-3"></i>On demand
+                    pickup facility
+                  </h6>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <ul class="list-inline">
+                <li>
+                  <h6>
+                    <i class="far fa-dot-circle text-primary mr-3"></i
+                    >Sourcing/Purchasing support
+                  </h6>
+                </li>
+                <li>
+                  <h6>
+                    <i class="far fa-dot-circle text-primary mr-3"></i>Fastest
+                    delivery Service
+                  </h6>
+                </li>
+                <li>
+                  <h6>
+                    <i class="far fa-dot-circle text-primary mr-3"></i
+                    >Convenient tracking service
+                  </h6>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Quote start-->
+    <div class="bg-container">
+      <div class="fcontainer">
+        <div class="fcol fcol1">
+          <div>
+            <h1 class="quote-heading">request a free quote</h1>
+          </div>
+          <div>
+            <p class="quote-para">
+              If you want to get any quote about pricing, request a free quote
+              by sending your parcel primaryrmation through that form. As soon
+              as possible, we will contact with you through Phone call or E-mail
+              and send your quote in your E-mail. For further primaryrmation
+              feel free to call us.
+            </p>
+            <div class="d-flex align-items-center flex-wrap">
+              <div class="col-lg-6 text-dark">
+                <ul>
+                  <li>
+                    <a class="text-dark" href="service.php#Global"
+                      >Global Parcel Service</a
+                    >
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <a class="text-dark" href="service.php#Document"
+                      >First Track Document Service</a
+                    >
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <a class="text-dark" href="service.php#Domestic"
+                      >Domestic Courier Service</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6 text-dark">
+                <ul>
+                  <li>
+                    <a class="text-dark" href="service.php#Commercial"
+                      >Commercial Freight Service</a
+                    >
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <a class="text-dark" href="service.php#Import"
+                      >Import Service</a
+                    >
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <a class="text-dark" href="service.php#Sourcing"
+                      >Product sourcing & distribution</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fcol fcol2">
+          <form action="#" method="post" class="quote-form">
+            <div class="input-group">
+              <input type="text" placeholder="your name" required />
+            </div>
+            <div class="input-group">
+              <input type="text" placeholder="your number" required />
+            </div>
+            <div class="input-group">
+              <input
+                type="email"
+                name=""
+                id=""
+                placeholder="your email"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <input
+                type="text"
+                placeholder="receiving country/city"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <input
+                type="number"
+                name=""
+                id=""
+                placeholder="total weight (lb)"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <select name="select parcel type " id="" required>
+                <option selected value="">select parcel type</option>
+                <option value="document">document</option>
+                <option value="non document">non document</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <select name="select a service" id="" required>
+                <option selected value="">select a service</option>
+                <option value="">global parcel service</option>
+                <option value="">commercial freight service</option>
+                <option value="">first track document service</option>
+                <option value="">import service</option>
+                <option value="">domestic courier service</option>
+                <option value="">product sourcing & distribution</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <button type="submit">Get A Quote</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--Quote end-->
+
+    <!--Services start-->
+    <div class="scontainer">
+      <div class="srow">
+        <div class="row1"><h1>our shipping services</h1></div>
+      </div>
+      <div class="rows">
+        <div class="srow">
+          <div class="row2">
+            <h6>
+              <i class="fa fa-2x fa-plane text-danger pr-3"></i>global parcel
+              services
+            </h6>
+          </div>
+          <div class="row2">
+            <h6>
+              <i class="fa fa-2x fa-envelope text-danger pr-3"></i> first track
+              document service
+            </h6>
+          </div>
+          <div class="row2">
+            <h6>
+              <i class="fa fa-2x fa-truck text-danger pr-3"></i>domestic courier
+              service
+            </h6>
+          </div>
+        </div>
+        <div class="srow">
+          <div class="row3">
+            <h6>
+              <i class="fa fa-2x fa-plane text-danger pr-3"></i>commercial
+              freight service
+            </h6>
+          </div>
+          <div class="row3">
+            <div class="item" id="item1">
+              <h6>
+                <i class="fa fa-2x fa-download text-danger pr-3"></i> import
+                service
+              </h6>
+            </div>
+          </div>
+          <div class="row3">
+            <h6>
+              <i class="fa fa-2x fa-truck text-danger pr-3"></i> product
+              sourcing & distribution
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Services end-->
+
+    <!--About2 start-->
+
+    <div class="bg-container">
+      <div class="fcontainer">
+        <div class="column column1">
+          <div class="frow frow1">
+            <img src="./img/feature-2.jpg" alt="image" />
+          </div>
+        </div>
+        <div class="column column2">
+          <div class="frow3">
+            <h1 class="heading">why chose us</h1>
+          </div>
+          <div class="frow4">
+            <p>
+              ST Express is the experts to deliver any package timely with care
+              and maximize member's savings. We combine multiple packages into
+              one and re-package products to save our customers thousands on
+              international shipping charges.
+            </p>
+            <ul class="list-inline">
+              <li>
+                <h6>
+                  <i class="far fa-dot-circle text-primary mr-3"></i
+                  ><a class="text-dark" href="service.php#Domestic"
+                    >Door to door delivery service</a
+                  >
+                </h6>
+              </li>
+              <li>
+                <h6>
+                  <i class="far fa-dot-circle text-primary mr-3"></i
+                  ><a class="text-dark" href="service.php#Global"
+                    >Cheapest rate you can find</a
+                  >
+                </h6>
+              </li>
+              <li>
+                <h6>
+                  <i class="far fa-dot-circle text-primary mr-3"></i
+                  ><a class="text-dark" href="service.php#Commercial"
+                    >On demand pickup facility</a
+                  >
+                </h6>
+              </li>
+              <li>
+                <h6>
+                  <i class="far fa-dot-circle text-primary mr-3"></i
+                  ><a class="text-dark" href="service.php#Sourcing"
+                    >Sourcing/Purchasing support</a
+                  >
+                </h6>
+              </li>
+              <li>
+                <h6>
+                  <i class="far fa-dot-circle text-primary mr-3"></i
+                  ><a class="text-dark" href="service.php#Import"
+                    >Fastest delivery Service</a
+                  >
+                </h6>
+              </li>
+              <li>
+                <h6>
+                  <i class="far fa-dot-circle text-primary mr-3"></i
+                  ><a class="text-dark" href="service.php#Document"
+                    >Convenient tracking service</a
+                  >
+                </h6>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--About2 end-->
+
+    <!--Parteners start-->
+    <div class="p-container">
+      <div class="p-row1">
+        <h1>our valuable parteners</h1>
+      </div>
+      <div class="p-row2">
+        <div class="p-row-1"><img src="./img/client-1.png" alt="" /></div>
+        <div class="p-row-1"><img src="./img/client-2.png" alt="" /></div>
+        <div class="p-row-1"><img src="./img/client-3.png" alt="" /></div>
+        <div class="p-row-1"><img src="./img/client-4.png" alt="" /></div>
+        <div class="p-row-1"><img src="./img/client-5.png" alt="" /></div>
+      </div>
+    </div>
+
+    <!--Parteners end-->
+
+    <!--Footer start-->
+    <div class="b-container">
+      <div class="b-row">
+        <h3>get in touch</h3>
+        <p>
+          <i class="fa fa-map-marker-alt mr-2"></i>
+          madnapur chandpur jhalihai ajgain unnao u.p. india
+        </p>
+        <p>
+          <a href="tel: +91 77069 99469" id="phone"
+            ><i class="fa fa-phone-alt mr-2"></i> +91 77069 99469</a
+          >
+        </p>
+        <p>
+          <a href="mailto:sanaf6350@gmail.com" id="email"
+            ><i class="fa fa-envelope mr-2"></i> sanaf6350@gmail.com</a
+          >
+        </p>
+      </div>
+      <div class="b-row">
+        <h3>quick links</h3>
+        <p>
+          <a href="#" class="links"
+            ><i class="fa fa-angle-right mr-2"></i> faq</a
+          >
+        </p>
+        <p>
+          <a href="#" class="links"
+            ><i class="fa fa-angle-right mr-2"></i> terms & condition</a
+          >
+        </p>
+        <p>
+          <a href="#" class="links"
+            ><i class="fa fa-angle-right mr-2"></i> privacy policy</a
+          >
+        </p>
+        <p>
+          <a href="#" class="links"
+            ><i class="fa fa-angle-right mr-2"></i> help desk</a
+          >
+        </p>
+      </div>
+      <div class="b-row">
+        <h3>lucknow office</h3>
+        <p>
+          <i class="fa fa-map-marker-alt mr-2"></i>
+          new haiderganj lucknow u.p. india
+        </p>
+        <p>
+          <a href="tel: +91 63891 80983" id="phone"
+            ><i class="fa fa-phone-alt mr-2"></i> +91 63891 80983</a
+          >
+        </p>
+        <p>
+          <a href="mailto:sanaf736@gmail.com" id="email">
+            <i class="fa fa-envelope mr-2"></i>
+            sanaf736@gmail.com</a
+          >
+        </p>
+        <p>
+          <a href="#" id="website"
+            ><i class="fa fa-globe-asia mr-2"></i>www.ST-Express.com</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <div
+      class="b-container"
+      style="border: 1px solid #f2f2f2; padding: 24px 48px 0 0"
+    >
+      <div class="b-row" style="padding-top: 30px">
+        <p><b>ST Express </b>all right reserved</p>
+      </div>
+      <div class="b-row" style="padding-top: 30px">
+        <h5 class="follow-us">follow us</h5>
+        <a class="" href="https://www.facebook.com/sanaf.ali.75" id="facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a class="" href="https://twitter.com/home" id="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a
+          class=""
+          href="https://www.linkedin.com/in/sanaf-ali-336700218/"
+          id="linkedin"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+      <div class="b-row" style="padding-top: 30px">
+        <p>developed by <b>sayyed sanaf</b></p>
+      </div>
+    </div>
+    <!--Footer end-->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
