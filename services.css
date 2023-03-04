@@ -176,7 +176,6 @@
 .bg-container {
   background-color: #f2f2f2;
 }
-
 .fcontainer {
   display: flex;
   width: 75%;
@@ -185,7 +184,6 @@
   align-items: normal;
   padding: 3rem 1rem;
 }
-
 .fcol {
   align-items: center;
   justify-content: center;
@@ -193,7 +191,6 @@
   width: 100%;
   padding: 3rem;
 }
-
 .fcol1 {
   text-align: justify;
 }
@@ -203,17 +200,14 @@
   font-weight: 900;
   margin-bottom: 1.5rem;
 }
-
 .quote-para {
   text-transform: none;
   line-height: 26px;
 }
-
 .fcol2 {
   background-color: #263c8a;
   max-width: 38%;
 }
-
 .quote-form {
   padding: 3rem 0;
 }
@@ -221,8 +215,9 @@
 .input-group input {
   width: 100%;
   padding: 10px;
+  border-style: none;
+  border-radius:5px;
 }
-
 .input-group {
   width: 100%;
   margin-bottom: 10px;
@@ -231,6 +226,8 @@
 .input-group select {
   width: 100%;
   padding: 10px;
+  border-style: none;
+  border-radius:5px;
 }
 
 .input-group button {
@@ -238,6 +235,8 @@
   padding: 10px;
   background-color: #e82222;
   color: #fff;
+  border-style: none;
+  border-radius:5px;
 }
 @media screen and (max-width: 600px) {
   .fcontainer {
@@ -246,17 +245,50 @@
     padding-left: 0;
     padding-right: 0;
   }
-  .fcol {
-    max-width: 100%;
-    margin: 0 15px;
+  .fcol{
+    width: 100%;
   }
   .fcol1{
-    padding:15px;
+    padding: 15px;
   }
-  /*.frow1 img {
-    width: 100%;
-    height: auto;
-  }*/
+  .fcol2{
+    max-width: 95%;
+    padding:2rem
+  }
+  
+}
+
+@media screen and (min-width: 600px) {
+  .fcontainer{
+    flex-wrap: wrap;
+    width:100%;
+  }
+  
+  .fcol{
+    max-width: 90%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .fcontainer{
+      flex-wrap: nowrap;
+      max-width: 90%;
+      margin: auto;
+  }
+
+  .fcol2{
+    max-width: 38%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .fcontainer{
+    flex-wrap: nowrap;
+    max-width: 80%;
+}
+
+.fcol2{
+  max-width: 38%;
+}
 }
 
 /*----Quote end----*/
